@@ -1,5 +1,10 @@
 import 'package:app_meals/screens/categories_screen.dart';
 import 'package:flutter/material.dart';
+
+//Rotas
+import 'utils/app_routes.dart';
+import 'screens/categories_meals_screen.dart';
+import 'screens/categories_screen.dart';
  
 void main() => runApp(MealsApp());
  
@@ -8,7 +13,8 @@ class MealsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'DeliMeals',
-      home: CategoriesScreen(),
+      // home: CategoriesScreen(),
+      // initialRoute: '/',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -22,6 +28,10 @@ class MealsApp extends StatelessWidget {
           )
         ),
       ),
+      routes: {
+        AppRoutes.HOME: (ctx) => CategoriesScreen(),
+        AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+      },
     );
   }
 }
