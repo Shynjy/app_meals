@@ -5,9 +5,10 @@ import 'package:flutter/material.dart';
 import 'utils/app_routes.dart';
 import 'screens/categories_meals_screen.dart';
 import 'screens/categories_screen.dart';
- 
+import 'screens/meal_detail_screen.dart';
+
 void main() => runApp(MealsApp());
- 
+
 class MealsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,15 +23,21 @@ class MealsApp extends StatelessWidget {
         fontFamily: 'Raleway',
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         textTheme: ThemeData.light().textTheme.copyWith(
-          headline6: TextStyle(
-            fontSize: 20,
-            fontFamily: 'RobotoCondensed',
-          )
-        ),
+                headline6: TextStyle(
+              fontSize: 20,
+              fontFamily: 'RobotoCondensed',
+            )),
       ),
       routes: {
         AppRoutes.HOME: (ctx) => CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+            builder: (_) {
+            return CategoriesScreen();
+          });
       },
     );
   }
