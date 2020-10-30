@@ -26,7 +26,7 @@ class MainDrawer extends StatelessWidget {
 
     // Verifica rota atual
     Navigator.popUntil(context, (route) {
-      // Estou atribuindo o valor da rota atual
+      // Atribui o valor da rota atual
       isSettingPage = route.settings.name;
       return true; // esse retorno é obrigatório
     });
