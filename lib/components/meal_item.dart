@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+// Tipos
 import '../models/meal.dart';
 
+// Rotas
 import '../utils/app_routes.dart';
 
 class MealItem extends StatelessWidget {

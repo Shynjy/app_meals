@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+// Tipos
 import '../models/category_meals.dart';
 
+// Dados
 import '../data/dummy_data.dart';
 
+// Widges
 import '../components/meal_item.dart';
 
 class CategoriesMealsScreen extends StatelessWidget {

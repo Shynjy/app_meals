@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Tipos
 import '../models/meal.dart';
 
 // Widget criado apenas com ideia de aprendizado

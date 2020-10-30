@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+// Tipos
 import '../models/category_meals.dart';
+
+// Rotas
 import '../utils/app_routes.dart';
 // import '../screens/categories_meals_screen.dart';
 
