@@ -1,3 +1,5 @@
+![Screenshot do app](assets/images/telas_app_meals.jpg)
+
 # Projeto em andamento / ongoing project
 
 # 📱 App_meals
